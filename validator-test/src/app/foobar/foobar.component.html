@@ -1,0 +1,17 @@
+<div class="content">
+  <form [formGroup]="foodForm">
+    <mat-form-field>
+      <mat-label>Favorite Food</mat-label>
+      <input matInput formControlName="favoriteFood">
+    </mat-form-field>
+    <br />
+
+    <mat-form-field>
+      <mat-label>Kind of Food</mat-label>
+      <input matInput formControlName="kindOfFood" [readonly]="true">
+    </mat-form-field>
+
+    <br />
+    <button mat-raised-button color="primary" (click)="validateForm()">Validate</button>
+  </form>
+</div>
